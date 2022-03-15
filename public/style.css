@@ -1,0 +1,498 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* ================= Navbar ================= */
+
+.my-navbar {
+  position: sticky !important;
+  top: 0px;
+  z-index: 10;
+  /* background-image: linear-gradient(to top, black, black),url(./assets/clement-helardot-95YRwf6CNw8-unsplash.jpg); */
+  
+
+}
+nav {
+  background: #000 !important;
+  z-index: 10;
+}
+nav > a {
+  color: #fff !important;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+ul li a {
+  transition: 0.5s;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff !important;
+}
+ul li a:hover {
+  color: #ffeb13 !important;
+  font-weight: bold;
+  transition: 0.5s;
+}
+ul li.active a {
+  color: #fff !important;
+  border-bottom: 2px solid #ffeb13 !important;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("./assets/toggle-menu-icon-png-8-Transparent-Images.png") !important;
+}
+/* ================= Cover Image ================= */
+.cover {
+  background-image: linear-gradient(to top, black, black);
+  width: 100%;
+  height: 700px;
+  position: relative;
+  margin-top: -70px;
+  top: 0%;
+}
+.cover-img img {
+  width: 100%;
+  height: 700px;
+  opacity: 0.2;
+}
+.cover .cover-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: #fff;
+  border-left: 5px solid #ddddde;
+  padding-left: 25px;
+}
+.cover-content h5 {
+  color: #ddddde;
+  font-family: auto;
+}
+.cover-content h1 {
+  color: #fff;
+  font-family: fantasy;
+  animation-duration: 2s;
+  animation-duration: 1300ms;
+  animation-delay: 0.6s;
+}
+.cover-content>a:hover{
+  text-decoration: none !important;
+  
+}
+.cover-content button {
+  color: #ddddde;
+  font-family: auto;
+  border: 3px solid #ffeb13;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+.cover-content button:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* ================= About ================= */
+.about-me {
+  width: 90%;
+  margin: 35px auto;
+}
+.about-me .heading,.work .heading {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.heading h1,
+.heading span {
+  font-weight: bold;
+  font-family: auto;
+  font-size: 38px;
+}
+.heading span {
+  border-bottom: 2px solid #ffeb13;
+}
+.heading p {
+  color: #ddddde;
+}
+/*  */
+.about-me .about-content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.about-img {
+  width: 35%;
+}
+.about-img img {
+  width: 100%;
+}
+.about-right {
+  width: 60%;
+  margin: 10px 0px;
+}
+.about-right h4,
+.about-right h4 span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: auto;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.about-right h4 span {
+  color: #ffeb13;
+}
+.about-right p {
+  margin: 20px 0px 40px;
+  line-height: 24px;
+}
+.about-right ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.about-right ul li {
+  width: 43%;
+  display: flex;
+  color: #ababab;
+  border-bottom: 2px solid #ababab;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+}
+.about-right ul li span {
+  font-weight: bold;
+  color: #000;
+  margin-right: 4px;
+}
+.my-icons i {
+  color: #fff;
+  background-color: black;
+  padding: 15px;
+  font-size: 25px;
+  margin-right: 10px;
+}
+ /* ============== Work ================ */
+ .work   {
+  width: 90%;
+  margin: 35px auto;
+}
+.work-img img{
+  width: 100%;
+}
+.work-content>.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  margin: 10px 0px !important;
+  position: relative;
+  border: 2px solid #cacaca;
+  height: 300px;
+}
+.card img {
+  height: 100%;
+}
+.card:hover {
+  border: 3px solid #ffeb13;
+  -webkit-animation: rotate-in-ver 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rotate-in-ver 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes rotate-in-ver {
+  0% {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-ver {
+  0% {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+.web-content {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.web-content:hover {
+  color: white;
+  transition: 0.5s ease;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.web-content h4{
+  color: #ffeb13;
+  font-family: fantasy;
+}
+.web-content p{
+  font-family: initial;
+  animation-delay: 1.6s;
+}
+.web-content a button {
+  width: 100px;
+  height: 36px;
+  background: transparent;
+  border: 3px solid #ffeb13;
+  color: #fff;
+  opacity: 1;
+  transition: 0.5s ease;
+  font-family: cursive;
+}
+.card:hover .web-content {
+  display: flex;
+  /* On :hover of div show button */
+}
+
+ /* ============== Contact Form ================ */
+ .contact   {
+  width: 100%;
+  background-color: #f3f3f3;
+  margin: 0px auto;
+  padding-bottom: 1px;
+}
+
+.contact .heading {
+  width: 90%;
+  padding-top: 40px;
+  padding-left: 5%;
+}
+
+.contact-form {
+  width: 90%;
+  display: flex;
+  margin: 60px auto 50px;
+  justify-content: center;
+  background-color: #ffe139;
+}
+
+.contact-form form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 29px 4px;
+  width: 100%;
+
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 20px;
+}
+
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 20px;
+
+}
+
+form .submit {
+  background-color: #f33;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    width: 35%;
+    margin: 0px auto;
+    border: 4px solid #000;
+}
+form .submit:active ,.cover-content a button:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+} 
+
+ /* ============== copyright ================ */
+
+.copy-right{
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  position: relative;
+  padding: 20px;
+}
+.copy-right button{
+  position: absolute;
+  background-color: #ffeb13;
+  left: 50%;
+  transform: translate(-50%,-100%);
+  width: 45px;
+  height: 50px;
+}
+
+
+.copy-right button i{
+font-size: 25px;
+}
+.copy-right p{
+  margin: 0px;
+  margin-top: 8px;
+}
+.copy-right p span{
+  color: #ffeb13;
+}
+@media only screen and (max-width: 1100px) {
+  .about-right h4,
+  .about-right h4 span {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .about-right ul li {
+    font-size: 16px;
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 955px) {
+  .about-img {
+    width: 40%;
+  }
+  .about-right {
+    margin: 0px;
+    width: 55%;
+  }
+  .about-right h4,
+  .about-right h4 span {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .about-right p {
+    margin: 13px 0px 16px;
+  }
+  .about-right ul {
+    margin-bottom: 20px;
+  }
+  .about-right ul li {
+    font-size: 16px;
+    padding: 6px;
+    margin: 0px;
+    width: 100%;
+  }
+  .my-icons i {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .about-right h4,
+  .about-right h4 span {
+    font-size: 23px;
+  }
+  .about-right p {
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .about-me{
+    height: 550px;
+  }
+  .about-img {
+    height: 250px;
+  }
+  .about-img img {
+    height: 100%;
+  }
+  .personal-info {
+    position: absolute;
+    left: 0;
+    top: 275px;
+  }
+  .personal-info ul li {
+    width: 48%;
+  }
+  .about-right h4,
+  .about-right h4 span {
+    font-size: 20px;
+  }
+  .my-icons i {
+    padding: 10px;
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .personal-info ul li {
+    width: 100%;}
+    .about-right h4, .about-right h4 span {
+      font-size: 19px;
+  }
+  .about-me{
+    height: 630px;
+  }
+}
+@media only screen and (min-width: 592px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+  .navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .about-right p {
+    font-size: 14px;
+  }
+  
+  }
+@media only screen and (max-width: 500px) {
+  .about-content {
+    flex-wrap: wrap;
+  }
+  .about-img {
+    width: 100%;
+    height: auto;
+  }
+  .about-right {
+    width: 100%;
+    margin: 15px 0px;
+  }
+  .personal-info {
+    position: relative;
+    top: 0%;
+  }
+  .about-right ul li {
+    width: 100%;
+  }
+  .about-right h4, .about-right h4 span {
+    font-size: 20px;
+}
+.about-me {
+  height: 100%;
+}
+}
